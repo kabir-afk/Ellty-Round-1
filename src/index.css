@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --color-yellow: #ffd84d;
+  --font-montserrat: "Montserrat", sans-serif;
+}

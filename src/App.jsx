@@ -1,10 +1,14 @@
 import { useState } from "react";
-import viteLogo from "/vite.svg";
+import Button from "./components/Button";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <>hello world</>;
+  return (
+    <div className="font-montserrat">
+      <Button />
+    </div>
+  );
 }
 
 export default App;

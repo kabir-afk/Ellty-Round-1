@@ -1,9 +1,11 @@
-import React from "react";
-
-const Button = () => {
+const Button = ({ handleOnSUbmit }) => {
   return (
-    <div className="w-[340px] h-10 bg-yellow font-normal rounded-sm text-center">
-      <button type="submit" className="w-full h-10 py-2.5 px-5">
+    <div className="w-full h-15 text-center py-2.5 px-[15px] gap-2.5">
+      <button
+        type="submit"
+        className="w-full bg-yellow rounded-sm h-10 py-2.5 px-5"
+        onClick={handleOnSUbmit}
+      >
         {" "}
         Done
       </button>

@@ -3,7 +3,7 @@ const Button = ({ handleOnSUbmit }) => {
     <div className="w-full h-15 text-center py-2.5 px-[15px] gap-2.5">
       <button
         type="submit"
-        className="w-full bg-yellow rounded-sm h-10 py-2.5 px-5"
+        className="w-full bg-yellow rounded-sm h-10 py-2.5 px-5 cursor-pointer"
         onClick={handleOnSUbmit}
       >
         {" "}

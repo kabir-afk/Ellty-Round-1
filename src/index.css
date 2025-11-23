@@ -2,5 +2,51 @@
 
 @theme {
   --color-yellow: #ffd84d;
+  --color-gray: #cdcdcd;
+  --color-black: #1414141f;
   --font-montserrat: "Montserrat", sans-serif;
+}
+
+.container {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translateX(-100%);
+  height: 23px;
+  width: 23px;
+  border: 1px solid #bdbdbd;
+  border-radius: 6px;
+}
+
+.container:hover input ~ .checkmark {
+  background-image: url("./assets/hover-tickmark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container input:checked ~ .checkmark {
+  border: none;
+  background-color: #2469f6;
+  background-image: url("./assets/tickmark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-mask-image: none;
+  mask-image: none;
 }
